@@ -26,6 +26,38 @@ a{
     text-decoration: none;
 }
 
+#button-up{
+
+    position: fixed;
+    z-index: 1;
+    right: 40px;
+    bottom: 30px;
+    font-size: 28px;
+    color: var(--secondary);
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+#button-up:hover{
+    cursor: pointer;
+    font-size: 35px;
+}
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.visibility{
+    opacity: 1;
+    visibility: visible;
+}
+
+.indicador{
+    width: 100%;
+    position: fixed;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--secondary);
+}
+
 .list{
     list-style: none;
 }
@@ -51,10 +83,30 @@ a{
 
 }
 
+.active{
+
+    color: var(--secondary) !important; 
+    transition:  all 1s;
+
+}
+
 .container-primary{
     width: 100%;
     background-color: var(--primary);
 }
+
+#skills{
+    padding-top: 150px;
+}
+#portfolio{
+    padding-top: 150px;
+}
+#contact{
+    padding-top: 80px;
+}
+
+
+
 
 .container-secondary{
 
@@ -70,6 +122,7 @@ a{
 .navigation{
 
     width: 100%;
+    height: auto;
     max-width: 1172px;
     margin: 0px auto;
     display: flex;
@@ -305,24 +358,11 @@ a{
     font-weight: 500;
 }
 .progressbar .progressbar-bar .progressbar-line{
-
     position: relative;
     height: 10px;
     width: 100%;
     background-color: var(--black);
     border-radius: 50px;
-
-    /* transform: scaleX(0);
-    transform-origin: left;
-    animation: progress-line 2s cubic-bezier(1,0, 0.5, 1) forwards; */
-
-}
-@keyframes progress-line{
-
-    100%{
-        transform: scaleX(1);
-    }
-
 }
 .progressbar .progressbar-bar .progressbar-line span{
 
@@ -331,9 +371,6 @@ a{
     border-radius: 50px;
     background-color: var(--secondary);
     position: absolute;
-    animation: progress-line 2s cubic-bezier(1,0, 0.5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
 }
 .progressbar .progressbar-bar .progressbar-line span::before{
 
@@ -347,10 +384,6 @@ a{
     border-bottom-width: 0px;
     border-right-width: 0px ;
     border-top-color: var(--secondary);
-    
-
-    opacity: 0;
-    animation: progressInfoB 1s 1.5s linear forwards;
 }
 .progressbar .progressbar-bar .progressbar-line span::after{
 
@@ -365,9 +398,6 @@ a{
     background-color: transparent;
     border: 1px solid var(--secondary);
     color: var(--white);
-
-    opacity: 0;
-    animation: progressInfoA 1s 1.5s linear forwards;
 }
 /*? ** Language ** */
 /* * html **/
@@ -423,18 +453,6 @@ a{
 }
 #node{
     width: 50%;
-}
-
-
-@keyframes progressInfoA{
-    100%{
-        opacity: 1;
-    }
-} 
-@keyframes progressInfoB{
-    100%{
-        opacity: 1;
-    }
 }
 
 /**  Portfolio **/

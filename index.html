@@ -7,30 +7,36 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://kit.fontawesome.com/e466ec6b27.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     <title>Portfolio | Piero MC</title>
 </head>
 
 <body>
 
-    <header class="container-primary">
-        <nav class="navigation">
+
+    <div id="button-up" class="hidden"><i class="fas fa-rocket"></i></div>
+  
+    <header class="container-primary" id="nav">
+        <nav class="navigation ">
             <a href="#" class="navigation__brand">
                 piero<p>.</p>mc
             </a>
             <div class="navigation__menu">
                 <ul class="list">
-                    <li class="list-item"><a class="list-link" href="#">Home</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Skills</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Portfolio</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Contact</a></li>
+                    <li class="list-item"><a class="list-link" id="linkHome" href="#home">Home</a></li>
+                    <li class="list-item"><a class="list-link" id="linkSkills" href="#skills">Skills</a></li>
+                    <li class="list-item"><a class="list-link" id="linkPortfolio" href="#portfolio">Portfolio</a></li>
+                    <li class="list-item"><a class="list-link" id="linkContact" href="#contact">Contact</a></li>
                 </ul>
 
             </div>
         </nav>
     </header>
-
-    <section id="Home" class="container-secondary">
+    <section id="home" class="container-secondary">
 
         <div class="banner">
 
@@ -52,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="banner__img">
+            <div class="banner__img showRightAnimated">
                 <img src="img/hero_img.png" alt="banner image">
             </div>
 
@@ -61,13 +67,13 @@
 
 
     <section id="skills" class="container-primary">
-
+       
         <div class="skills">
             <div class="skills__title section-title">
                 <h2>Skills</h2>
             </div>
             <div class="skills__content">
-                <div class="skills__content__technical box-bar">
+                <div class="skills__content__technical box-bar showLeft">
                     <h3 class="progressbar-title">Technical</h3>
                     <div class="progressbar">
                         <div class="progressbar-bar">
@@ -110,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="skills__content__framework box-bar">
+                <div class="skills__content__framework box-bar showRight">
                     <h3 class="progressbar-title">Frameworks</h3>
                     <div class="progressbar">
                         <div class="progressbar-bar">
@@ -141,22 +147,22 @@
             </div>
             <div class="portfolio__content">
                 <div class="portfolio__content__box">
-                    <div class="box">
+                    <div class="showLeft box">
                         <img src="img/img-02.jpg" alt="">
                     </div>
-                    <div class="box">
+                    <div class="showLeft box">
                         <img src="img/img-01.jpg" alt="">
                     </div>
-                    <div class="box">
+                    <div class="showLeft box">
                         <img src="img/img-02.jpg" alt="">
                     </div>
-                    <div class="box">
+                    <div class="showRight box">
                         <img src="img/img-01.jpg" alt="">
                     </div>
-                    <div class="box">
+                    <div class="showRight box">
                         <img src="img/img-02.jpg" alt="">
                     </div>
-                    <div class="box">
+                    <div class="showRight box">
                         <img src="img/img-01.jpg" alt="">
                     </div>
                 </div>
@@ -171,7 +177,7 @@
                 <span>Have Any Query?</span>
                 <h2>Contact Me</h2>
             </div>
-            <div class="contact__content">
+            <div class="contact__content showLeft">
                 <div class="box__contact">
                     <div class="adreess">
 
