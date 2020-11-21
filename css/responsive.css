@@ -1,0 +1,51 @@
+@media screen and (max-width: 1170px){
+
+    .navigation{
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    .banner{
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .banner .banner__description{
+        width: 100%;
+        max-width: 100%;
+    }
+    .banner .banner__description .banner__description__sociales{
+        width: 100%;
+    }
+    .banner__img{
+        display: none;
+    }
+    .skills .skills__content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-bar{
+        flex: 100%;
+        margin-bottom: 20px;
+    }
+
+    .box{
+        width: 50%;
+        padding-right: 10px;
+    }
+
+    .contact .contact__content{
+        flex-wrap: wrap;
+    }
+    .contact .contact__content .box__contact{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
