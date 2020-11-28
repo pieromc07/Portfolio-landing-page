@@ -122,6 +122,9 @@
     .toggle-bar{
         display: none;
     }
+    .navigation__menu_collapse{
+        display: none;
+    }
     .box{
         width: 50%;
         padding-right: 10px;

@@ -508,9 +508,6 @@ a{
     color: var(--secondary);
     font-weight: 700;
 }
-.contact__title h2{
-
-}
 
 .contact{
 
@@ -607,3 +604,45 @@ a{
     display: inline-block;
     color: var(--white);
 }
+
+.navigation__menu_collapse{
+
+    position: fixed;
+    z-index: 1;
+    left: -100%;
+    border-radius: 2px;
+    height: 100vh;
+    width: 80%;
+    background-color: var(--primary);
+    color: var(--white);
+    transition: all ease 1s;
+}
+
+.navigation__menu_collapse ul{
+
+    width: 100%;
+    padding-top: 20px;
+
+}
+.navigation__menu_collapse ul li{
+
+	display: block;
+	border-bottom: 1.5px solid  rgba(255, 74, 87, 1);
+	padding: 20px;
+	cursor: pointer;
+	
+}
+  
+.navigation__menu_collapse ul li:hover{
+	background-color: rgba(31, 34, 53, .3);
+	background: rgba(255, 74, 87, .7);
+}
+
+.navigation__menu_collapse ul li a{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--white);
+    margin: 0 15px;
+}  

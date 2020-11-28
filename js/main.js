@@ -110,16 +110,34 @@ $(document).ready(function () {
 
     //TODO: Up page
     const getTop = () => document.documentElement.scrollTop || document.body.scrollTop
-    
+
     const up = () => {
 
-        if(getTop() > 0){
+        if (getTop() > 0) {
             requestAnimationFrame(up)
             scrollTo(0, getTop() - (getTop() / 30))
         }
     }
-    
+
     const buttonUp = document.getElementById('button-up')
     buttonUp.addEventListener('click', up)
+    let contador = 1
+    $('#toggle-bar').click(function (e) {
+        e.preventDefault();
+        if (contador == 1) {
+            $('#collapse').animate({
+                left: '0'
+            })
+            contador = 0 
+        } else {
+            contador=1
+            $('#collapse').animate({
+                left: '-100%'
+            })
+        }
+
+
+
+    });
 
 });
