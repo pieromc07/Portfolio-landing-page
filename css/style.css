@@ -1,7 +1,7 @@
 :root{
-
     --primary: #1F2235;
-    --secondary: #ff4a57;
+    --secondary: #536DFE;
+    /* #ff4a57; */
     --black: #23263a;
     --white: #dfdfdf;
 }
@@ -646,3 +646,59 @@ a{
     color: var(--white);
     margin: 0 15px;
 }  
+
+/** About me */
+
+.about{
+    width: 100%;
+    max-width: 1172px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--white);
+    padding: 30px 15px;
+}
+
+.about__title{
+    width: 100%;
+    max-width: 1172px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--white);
+    padding: 30px 15px;
+}
+
+.about__content{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--white);
+    padding: 30px 15px;
+}
+
+.about__content .about__content__img{
+    flex: 45.55%;
+}
+
+.about__content .about__content__img img{
+    width: 60%;
+    border-radius: 5px;
+}
+
+.about__content .about__content__description{
+    flex: 45.45%;
+}
+
+.about__content .about__content__description p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+

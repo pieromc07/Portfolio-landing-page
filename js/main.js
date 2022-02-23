@@ -66,6 +66,9 @@ $(document).ready(function () {
         var topPortfolio = offPortfolio.top;
         var offContact = $('#contact').offset();
         var topContact = offContact.top;
+        var offAbout = $('#aboutme').offset();
+        var topAbout = offAbout.top;
+
 
         if (scroll >= 0 && scroll < (topSkills - 250)) {
 
@@ -105,6 +108,13 @@ $(document).ready(function () {
             $('#button-up').addClass('visibility');
             $('#button-up').removeClass('hidden');
         }
+
+        if (scroll > topAbout - 200) {
+            $('#linkPortfolio').addClass('active');
+        } else {
+            $('#linkContact').removeClass('active');
+        }
+
     };
 
 

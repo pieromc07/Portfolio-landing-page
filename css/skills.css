@@ -1,0 +1,66 @@
+.skills .skills__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills__content .skills__card{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__card .skills__card-title{
+
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+    margin-top: .5rem;
+}
+
+.skills__card .skills__card-icon{
+    
+        font-size: 4.5rem;
+        color: var(--white);
+        margin-top: .5rem;
+}
+
+.javascript::before{
+    color: #EAD41C;
+}
+
+.php::before{
+    color: #777BB3;
+}
+.bootstrap::before{
+    color: #6F11EF;
+}
+
+.angular::before{
+    color: #D6002F;
+}
+
+.laravel::before{
+    color: #F72C1F;
+}
+
+.nodejs::before{
+    color: #67A05C;
+}
+
+.git::before{
+    color: #E84E31;
+}
+
+.java::before{
+    color: #007EBB;
+}
+.css::before{
+    color: #0063A5;
+}
+
+.html::before{
+    color: #D84924;
+}
