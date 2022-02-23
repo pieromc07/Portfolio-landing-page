@@ -471,25 +471,87 @@ a{
 
 .portfolio .portfolio__content{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 1172px;
     margin: 0px 15px;
 }
 
 .portfolio .portfolio__content .portfolio__content__box {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    position: relative;
+    width: 240px;
+    height: 270px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 2rem;
 }
 
-.box{
-    width: 30%;
+.portfolio__content__box .box{
+    padding: 0;
+    min-width: 100%;
+    height: 100%;
     margin-bottom: 15px;
 }
 .box img{
     border-radius: 5px;
     width: 100%;
+    height: 100%;
+}
+
+.portfolio__content__box:hover .info{
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio__content__box .info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.7s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    opacity: 0;
+}
+
+.info .info-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info .info-links a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info .info-links a:hover{
+    color: var(--secondary);
+}
+
+.info .info-links a i{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.info .info-links a span{
+    font-size: 14px;
+    font-weight: 500;
 }
 
 /** Contact */
@@ -541,12 +603,17 @@ a{
 }
 .contact .contact__content .box__contact .adreess{
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px 5px;
 }
 
 .contact .contact__content .box__contact .adreess i{
     font-size: 28px;
     color: var(--secondary);
+    margin-bottom: 10px;
 }
 .contact .contact__content .box__contact .adreess span{
     font-weight: 500;
