@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>Portfolio | Piero MC</title>
+    <title>Portfolio | Carlos MC</title>
 </head>
 
 <body>
@@ -25,23 +25,23 @@
             </a>
             <a href="#" class="toggle-bar" id="toggle-bar"><i class="fas fa-bars"></i></a>
             <div class="navigation__menu">
-                <ul class="list">
-                    <li class="list-item"><a class="list-link" id="linkHome" href="index.html">Home</a></li>
-                    <li class="list-item"><a class="list-link" id="linkAboutme" href="#aboutme">About me</a></li>
-                    <li class="list-item"><a class="list-link" id="linkSkills" href="#skills">Skills</a></li>
-                    <li class="list-item"><a class="list-link" id="linkPortfolio" href="#portfolio">Portfolio</a></li>
-                    <li class="list-item"><a class="list-link" id="linkContact" href="#contact">Contact</a></li>
+                <ul class="list" id="list-menu">
+                    <li class="list-item"><a class="list-link" id="linkHome" href="index.html">Inicio</a></li>
+                    <li class="list-item"><a class="list-link" id="linkAboutme" href="#aboutme">Sobre Mi</a></li>
+                    <li class="list-item"><a class="list-link" id="linkSkills" href="#skills">Habilidades</a></li>
+                    <li class="list-item"><a class="list-link" id="linkPortfolio" href="#portfolio">Proyectos</a></li>
+                    <li class="list-item"><a class="list-link" id="linkContact" href="#contact">Contacto</a></li>
                 </ul>
 
             </div>
         </nav>
         <div id="collapse" class="navigation__menu_collapse">
             <ul class="">
-                <li class=""><a class="" id="linkHome" href="index.html">Home</a></li>
-                <li class=""><a class="" id="linkAboutme" href="#aboutme">About me</a></li>
-                <li class=""><a class="" id="linkSkills" href="#skills">Skills</a></li>
-                <li class=""><a class="" id="linkPortfolio" href="#portfolio">Portfolio</a></li>
-                <li class=""><a class="" id="linkContact" href="#contact">Contact</a></li>
+                <li class=""><a class="" id="linkHome" href="index.html">Inicio</a></li>
+                <li class=""><a class="" id="linkAboutme" href="#aboutme">Sobre Mi</a></li>
+                <li class=""><a class="" id="linkSkills" href="#skills">Habilidades</a></li>
+                <li class=""><a class="" id="linkPortfolio" href="#portfolio">Proyectos</a></li>
+                <li class=""><a class="" id="linkContact" href="#contact">Contacto</a></li>
             </ul>
         </div>
     </header>
@@ -54,14 +54,19 @@
                 <ul class="banner__description__sociales list">
                     <li class="list-item"><a href="https://github.com/pieromc07" target="_blank"><i
                                 class="fab fa-github"></i></a></li>
-                    <li class="list-item"><a href="https://www.linkedin.com/in/piero-merino-carpio-187328224/"
+                    <li class="list-item"><a href="https://www.linkedin.com/in/carlos-merino-carpio-187328224/"
                             target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
                 <div class="banner__description__about">
-                    <h1>I am Piero Merino</h1>
-                    <p>Frontend / Backend Developer</p>
+                    <h1>Carlos Merino Carpio</h1>
+                    <p>Desarrollador de Software</p>
                     <ul class="list">
-                        <li class="list-item"><a href="#portfolio">My Portfolio </a></li>
+                        <!-- <li class="list-item"><a href="#portfolio">Mi Portfolio </a></li> -->
+                        <!-- 
+                            Descargar desde la carpeta de img
+                         -->
+                        <li class="list-item"><a href="./img/CARLOS_MERINO_CV.pdf" download="CARLOS_MERINO_CV.pdf"
+                                target="_blank">Descargar CV</a></li>
                     </ul>
                 </div>
             </div>
@@ -78,7 +83,7 @@
     <section id="aboutme" class="container-primary">
         <div class="about">
             <div class="about__title section-title">
-                <h2>About me</h2>
+                <h2>Sobre Mi</h2>
             </div>
 
             <div class="about__content">
@@ -87,13 +92,16 @@
                 </div>
                 <div class="about__content__description">
                     <p>
-                        I am a Web Developer, mainly oriented to Backend development. I have experience in JavaScript,
-                        PHP, MySQL, Java and powerful frameworks like Laravel.
+                        Desarrollador de software con un enfoque orientado a la innovación y con experiencia en el
+                        desarrollo backend con los frameworks Laravel, Spring boot y Nestjs. Mi experiencia abarca la
+                        creación y optimización de APIs, así como la implementación de arquitecturas eficientes para
+                        garantizar un rendimiento óptimo.
                     </p>
                     <p>
-                        I consider myself a person with problem solving skills, collaborative work,
-                        adaptability and fast learning.
-                        In my free time I usually watch documentaries and play soccer.
+                        Estoy comprometido con la excelencia técnica y mi constante aprendizaje me permite estar a la
+                        vanguardia de las últimas tendencias tecnológicas. Mi objetivo es no solo cumplir con los
+                        requisitos del proyecto, sino también superar las expectativas y contribuir significativamente
+                        al éxito del equipo.
                     </p>
                 </div>
             </div>
@@ -105,91 +113,53 @@
 
         <div class="skills">
             <div class="skills__title section-title">
-                <h2>Skills</h2>
+                <h2>Habilidades</h2>
             </div>
 
             <div class="skills__content">
-
                 <div class="skills__card ">
-
                     <i class="skills__card-icon fab fa-css3-alt css "></i>
                     <p class="skills__card-title">CSS</p>
-
                 </div>
-
                 <div class="skills__card ">
-
                     <i class="skills__card-icon fab fa-html5 html "></i>
                     <p class="skills__card-title">HTML</p>
-
                 </div>
-
-
-
-
                 <div class="skills__card ">
-
                     <i class="skills__card-icon fab fa-js javascript "></i>
                     <p class="skills__card-title">JavaScript</p>
-
                 </div>
-
-
                 <div class="skills__card ">
-
                     <i class="skills__card-icon fab fa-php php "></i>
                     <p class="skills__card-title">PHP</p>
-
                 </div>
-
-
                 <div class="skills__card ">
-
                     <i class="skills__card-icon fab fa-java java "></i>
                     <p class="skills__card-title">Java</p>
-
                 </div>
-
-
                 <div class="skills__card ">
-
                     <i class="skills__card-icon fab fa-git-alt git "></i>
                     <p class="skills__card-title">Git</p>
-
                 </div>
-
-
                 <div class="skills__card ">
-
                     <i class="skills__card-icon fab fa-node-js nodejs "></i>
                     <p class="skills__card-title">NodeJS</p>
-
                 </div>
-
-
                 <div class="skills__card ">
-
                     <i class="skills__card-icon fab fa-laravel laravel "></i>
                     <p class="skills__card-title">Laravel</p>
-
                 </div>
-
                 <div class="skills__card ">
-
-                    <i class="skills__card-icon fab fa-angular angular "></i>
-                    <p class="skills__card-title">Angular</p>
-
+                    <!-- <i class="skills__card-icon fab fa-angular angular "></i>-->
+                    <i class="skills__card-icon fab fa-react react"></i> 
+                    <p class="skills__card-title">React</p>
                 </div>
-
                 <div class="skills__card ">
-
                     <i class="skills__card-icon fab fa-bootstrap bootstrap "></i>
                     <p class="skills__card-title">Bootstrap</p>
-
                 </div>
-
             </div>
-            <!-- 
+            <!--
             <div class="skills__content">
                 <div class="skills__content__technical box-bar showLeft">
                     <h3 class="progressbar-title">Technical</h3>
@@ -261,10 +231,24 @@
     <section id="portfolio" class="container-secondary">
         <div class="portfolio">
             <div class="portfolio__title section-title">
-                <h2>Portfolio</h2>
+                <h2>Proyectos</h2>
             </div>
             <div class="portfolio__content">
-                <div class="showLeft  portfolio__content__box">
+                <div class="portfolio__content__box">
+                    <div class="box">
+                        <img src="img/auxona.png" alt="project auxona">
+                    </div>
+                    <div class="info">
+                        <h3>Auxona</h3>
+                        <div class="info-links">
+                            <a target="_blank" href="https://github.com/pieromc07/auxona-app"><i
+                                    class="fab fa-github"></i><span>Code</span></a>
+                            <a target="_blank" href="https://auxona.vercel.app/"><i
+                                    class="fas fa-external-link-alt"></i><span>Visit</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__content__box">
                     <div class="box">
                         <img src="img/portfolio-servipac.jpg" alt="project servipac">
                     </div>
@@ -279,7 +263,7 @@
                     </div>
                 </div>
 
-                <div class="showLeft  portfolio__content__box">
+                <div class="portfolio__content__box">
                     <div class="box">
                         <img src="img/porfolio-page_not_found.jpg" alt="project page not found">
                     </div>
@@ -294,7 +278,7 @@
                     </div>
                 </div>
 
-                <div class="showLeft  portfolio__content__box">
+                <div class="portfolio__content__box">
                     <div class="box">
                         <img src="img/order-summary.jpg" alt="project page not found">
                     </div>
@@ -316,15 +300,14 @@
     <section id="contact" class="container-primary">
         <div class="contact">
             <div class="contact__title section-title">
-                <span>Have Any Query?</span>
-                <h2>Contact Me</h2>
+                <h2>Contacto</h2>
             </div>
             <div class="contact__content showLeft">
                 <div class="box__contact">
                     <div class="adreess">
 
                         <i class="fa-fw fa fa-map-marker"></i>
-                        <span>Locate us</span>
+                        <span>Direccion</span>
                         <p>Pacasmayo - La Libertad - Perú</p>
 
                     </div>
@@ -333,20 +316,16 @@
                     <a class="adreess" href="https://api.whatsapp.com/send?phone=+51 919623698">
                         <i class="fab fa-whatsapp"></i>
                         <span>
-                            contact me by whatsapp
+                            Contactame por Whatsapp
                         </span>
-
-
                     </a>
                 </div>
                 <div class="box__contact">
-                    <a class="adreess"
-                        href="mailto:piero0716.mc@gmail.com"
-                    >
-
+                    <a class="adreess" href="mailto:piero0716.mc@gmail.com">
                         <i class="fa-fw fa fa-envelope-o"></i>
-                        <span>Get in online</span>
-                        
+                        <span>
+                            Enviame un correo
+                        </span>
                     </a>
                 </div>
             </div>

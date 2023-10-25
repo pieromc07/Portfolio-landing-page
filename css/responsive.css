@@ -6,6 +6,9 @@
         padding-top: 20px !important;
     }
     
+    #list-menu{
+        display: none;
+    }
 
     .navigation{
 
@@ -79,9 +82,18 @@
         margin-bottom: 20px;
     }
     /* * ** Portafolio ** * */
-    .box{
-        width: 100%;
-        padding-right: 10px;
+    .portfolio__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio__content__box{
+        flex: 100%;
+        margin-bottom: 20px;
     }
 
     /* * ** Contact ** * */

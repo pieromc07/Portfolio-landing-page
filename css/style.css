@@ -1,6 +1,6 @@
 :root{
     --primary: #1F2235;
-    --secondary: #536DFE;
+    --secondary: #536dfe;
     /* #ff4a57; */
     --black: #23263a;
     --white: #dfdfdf;
@@ -694,7 +694,7 @@ a{
 .navigation__menu_collapse ul li{
 
 	display: block;
-	border-bottom: 1.5px solid  rgba(255, 74, 87, 1);
+	border-bottom: 1.5px solid  rgba(83, 109, 254, 1);
 	padding: 20px;
 	cursor: pointer;
 	
@@ -702,7 +702,7 @@ a{
   
 .navigation__menu_collapse ul li:hover{
 	background-color: rgba(31, 34, 53, .3);
-	background: rgba(255, 74, 87, .7);
+	background: rgba(83, 109, 254, .7);
 }
 
 .navigation__menu_collapse ul li a{

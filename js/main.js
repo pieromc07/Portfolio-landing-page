@@ -138,6 +138,7 @@ $(document).ready(function () {
             $('#collapse').animate({
                 left: '0'
             })
+            $('#list-menu').attr('style', 'display:none')
             contador = 0 
         } else {
             contador=1
@@ -145,9 +146,6 @@ $(document).ready(function () {
                 left: '-100%'
             })
         }
-
-
-
     });
 
 });
